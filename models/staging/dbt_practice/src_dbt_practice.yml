@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: dbt_practice
+    tables:
+      - name: raw_customers
+      - name: raw_orders
+      - name: raw_payments
+
+models:
+  - name: stg_customers
+    config:
+      schema: blah
+  - name: stg_orders
+    config:
+      schema: blah
